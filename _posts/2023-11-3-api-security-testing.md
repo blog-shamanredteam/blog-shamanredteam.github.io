@@ -43,3 +43,4 @@ References :<br />
 [https://github.com/OJ/gobuster](https://github.com/OJ/gobuster)<br />
 [https://archive.org](https://archive.org)<br />
 [https://www.exploit-db.com/google-hacking-database](https://www.exploit-db.com/google-hacking-database)<br />
+[https://github.com/tomnomnom/waybackurls](https://github.com/tomnomnom/waybackurls)<br />
