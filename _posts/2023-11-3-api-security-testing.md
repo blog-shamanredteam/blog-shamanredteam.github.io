@@ -21,7 +21,7 @@ First off you need to obtain as many API endpoints of a target application/API s
 Even if API documentation is available, you shouldn't stop there and continue discovery process via using specific wordlists in most cases. What you need to do in this stage is basically brute-forcing API endpoints with wordlists. There are really good tools which you can make use of in this stage such as gobuster, ffuf, kiterunner (highly recommended, specifically designed to be used with APIs), etc.
 You can also take advantage of the following OSINT techniques (Passive Information Gathering) to discover further API endpoints:
 - Google Dorking<br />
-	This technique relies on searching for specific keywords using advanced search operators. There are dozens of useful Google dorks which you can get familiar with through [this link](https://www.exploit-db.com/google-hacking-database). As an example, you can use the following Google dork to find interesting API directories for further testing:
+	This technique relies on searching for specific keywords using advanced search operators. There are dozens of useful Google dorks which you can get familiar with through [this link](https://www.exploit-db.com/google-hacking-database). As an example, you can use the following Google dork to find interesting API directories for further testing:<br />
   `inurl:"/api/v1" intext:"index of /"`
 - WayBackMachine<br />
 	WayBackMachine archives websites across the web and allows users to perform searches through them. It actively indexes web pages and stores a copy of them with the time when it indexed in its database. You can view older versions of your target application, which allows you to look at source code of old web pages and extract new API endpoints to test. You can access it with its [website](https://archive.org) or use waybackurls tool to automate the process.
@@ -36,10 +36,10 @@ In this first part of our API Security blog series, we've covered introduction t
 If you are interested in assessing security of your APIs, reach out to us using [this link](https://shamanredteam.com/#/contact). We will organize an initial meeting with you to give more information about workflow of our projects and discuss a possible cooperation. 
 
 References :<br />
-https://aws.amazon.com/what-is/api/<br />
-https://blog.hubspot.com/website/what-is-swagger<br />
-https://github.com/assetnote/kiterunner <br/>
-https://github.com/ffuf/ffuf <br />
-https://github.com/OJ/gobuster <br />
-https://archive.org<br />
-https://www.exploit-db.com/google-hacking-database<br />
+[https://aws.amazon.com/what-is/api/](https://aws.amazon.com/what-is/api/)<br />
+[https://blog.hubspot.com/website/what-is-swagger](https://blog.hubspot.com/website/what-is-swagger)<br />
+[https://github.com/assetnote/kiterunner](https://github.com/assetnote/kiterunner) <br/>
+[https://github.com/ffuf/ffuf](https://github.com/ffuf/ffuf) <br />
+[https://github.com/OJ/gobuster](https://github.com/OJ/gobuster)<br />
+[https://archive.org](https://archive.org)<br />
+[https://www.exploit-db.com/google-hacking-database](https://www.exploit-db.com/google-hacking-database)<br />
