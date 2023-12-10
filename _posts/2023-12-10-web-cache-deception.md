@@ -34,7 +34,7 @@ In our last example, it was discovered that CDN server caches the response when 
 ![diagram](https://github.com/blog-shamanredteam/blog-shamanredteam.github.io/assets/147247315/d579b6fd-d66a-4234-a4bd-91477705e890)
 
 Source: Cached and Confused: Web Cache Deception in the Wild, Aug 2020, USENIX Security Symposium
-
+.com/what-is/api/)
 ### Case Study
 In one of our recent engagements, we discovered that a target application is vulnerable to a Web Cache Deception attack. It was a e-commerce website and used `/getinfo` endpoint to fetch account details from the backend. The web server was configured in such a way that it returned the same response when appending any static file extension to the end of endpoints. For example, it was possible to get account details by requesting `/getinfo.css` path. After that, we checked if the response got cached via requesting the same URL on another browser and observed that the same response was returned. Since both of the mentioned conditions were met for Web Cache Deception attacks, we concluded that the target was vulnerable.
 
@@ -46,6 +46,6 @@ In this blog we looked at key concepts about caching and covered Web Cache Decep
  - Configure web server in such a way that it returns Not Found error when requesting static resources which don't exist and rejects requests with unexpected path components.
 
 ### References
- - http://omergil.blogspot.com/2017/02/web-cache-deception-attack.html
- - https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management_Testing/13-Test_for_Path_Confusion
- - https://www.researchgate.net/publication/350568189_Cached_and_Confused_Web_Cache_Deception_in_the_Wild
+ - [http://omergil.blogspot.com/2017/02/web-cache-deception-attack.html](http://omergil.blogspot.com/2017/02/web-cache-deception-attack.html)
+ - [https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management_Testing/13-Test_for_Path_Confusion](https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management_Testing/13-Test_for_Path_Confusion)
+ - [https://www.researchgate.net/publication/350568189_Cached_and_Confused_Web_Cache_Deception_in_the_Wild](https://www.researchgate.net/publication/350568189_Cached_and_Confused_Web_Cache_Deception_in_the_Wild)
