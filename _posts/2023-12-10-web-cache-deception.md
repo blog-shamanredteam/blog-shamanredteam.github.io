@@ -1,5 +1,5 @@
 ---
-title:  "Shaman's Guide to Web Cache Deception"
+title:  "Shaman's Guide to Web Cache Deception Attacks"
 layout: post
 excerpt:  "In this blog we’ll dive into Web Cache Deception attack which has gained popularity in recent years. It has been found that the websites of many large companies was vulnerable to it and it is likely that vulnerable instances may still be discovered today as well."
 ---
@@ -22,7 +22,7 @@ After confirming caching, the next next step is testing for path confusion. This
 
 `https://example.com/account.php/nonexistent.jpg`
 
-Note that, the requested resource doesn't exist on the server and is solely used to detect any misconfiguration related to paths. If the response to the above request displays the content of account.php and CDN caches the request, all the conditions are met for Web Cache Deception attack. Here, CDN determines the cacheability of response solely based on the file extension (.css), however securely-configured caching server should consider content-type and caching headers returned from the origin server too.
+Note that, the requested resource doesn't exist on the server and is only used to detect any misconfiguration related to paths. If the response to the above request displays the content of account.php and CDN caches the request, all the conditions are met for Web Cache Deception attack. Here, CDN determines the cacheability of response solely based on the file extension (.css), however securely-configured caching server should consider content-type and caching headers returned from the origin server too.
 
 ### Attack scenario
 After confirming necessary conditions for the attack, the target application should be analyzed to identify interesting endpoints which return user-specific details, such as API tokens, session cookies, CSRF tokens, etc. 
