@@ -15,5 +15,5 @@ We are professional Red Team specialists with the aim of helping you identify se
  - API Pentest
  - Desktop Application Pentest
  - Cloud Security Assessment
- - Source Code Review
+ - Secure Code Review
  - Application Security Trainings 
